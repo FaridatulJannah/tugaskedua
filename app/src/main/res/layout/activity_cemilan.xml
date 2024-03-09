@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1D6DF"
+        android:layout_margin="16dp"
+        tools:context=".CemilanActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCemilan1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCemilan1"
+                    android:src="@drawable/cemilan1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvCemilan1"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Kentang Goreng"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescCemilan1"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCemilan1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Kentang Goreng renyah yang disajikan dengan saos cocol."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaCemilan1"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescCemilan1"
+                    android:text="Rp. 10.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCemilan2"
+            app:layout_constraintTop_toBottomOf="@+id/cardCemilan1"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCemilan2"
+                    android:src="@drawable/baksobakar"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvCemilan2"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Bakso Bakar"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescCemilan2"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCemilan2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="disajikan 1 porsi, 8 tusuk bakso bakar."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaCemilan2"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescCemilan2"
+                    android:text="Rp. 10.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCemilan3"
+            app:layout_constraintTop_toBottomOf="@+id/cardCemilan2"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCemilan3"
+                    android:src="@drawable/tempe"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvCemilan3"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Tempe Bacem"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescCemilan3"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCemilan3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Tempe bacem manis teman makan, disajikan dalam 1 porsi."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaCemilan3"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescCemilan3"
+                    android:text="Rp. 10.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCemilan4"
+            app:layout_constraintTop_toBottomOf="@+id/cardCemilan3"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCemilan4"
+                    android:src="@drawable/pisgor"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvCemilan4"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Pisang Goreng"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescCemilan4"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan4"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCemilan4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Pisang goreng manis dan renyah, disajikan dalam 1 porsi."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaCemilan4"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan4"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescCemilan4"
+                    android:text="Rp. 10.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCemilan5"
+            app:layout_constraintTop_toBottomOf="@+id/cardCemilan4"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivCemilan5"
+                    android:src="@drawable/jamur"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvCemilan5"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Jamur Krispy"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescCemilan5"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan5"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCemilan5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Jamur kentaki yang renyah dan lezat, disajikan dengan saos cocol."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaCemilan5"
+                    app:layout_constraintStart_toEndOf="@+id/ivCemilan5"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescCemilan5"
+                    android:text="Rp. 10.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

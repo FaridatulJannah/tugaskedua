@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="#F1D6DF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WARMINDO BERKAH"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/IvMiegor"
+        android:src="@drawable/miegor"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"/>
+
+    <ImageView
+        android:id="@+id/IvMinum"
+        android:src="@drawable/minum"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"/>
+
+    <ImageView
+        android:id="@+id/IvCemilan"
+        android:src="@drawable/cemilan"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"/>
+
+
+</LinearLayout>

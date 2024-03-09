@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1D6DF"
+        android:layout_margin="16dp"
+        tools:context=".MinumActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMinum1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMinum1"
+                    android:src="@drawable/teajus"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMinum1"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Tea Jus Gula Batu"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMinum1"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMinum1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Minuman rasa teh dan manis, diajikan dengan es batu."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMinum1"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMinum1"
+                    android:text="Rp. 4.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMinum2"
+            app:layout_constraintTop_toBottomOf="@+id/cardMinum1"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMinum2"
+                    android:src="@drawable/nutrisari"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMinum2"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Nutri Sari"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMinum2"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMinum2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Nutri Sari rasa jeruk peras, disajikan dengan es batu."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMinum2"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMinum2"
+                    android:text="Rp. 4.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMinum3"
+            app:layout_constraintTop_toBottomOf="@+id/cardMinum2"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMinum3"
+                    android:src="@drawable/milo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMinum3"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Milo"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMinum3"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMinum3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Dapat disajikan dengan es batu ataupun air panas."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMinum3"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMinum3"
+                    android:text="Rp. 6.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMinum4"
+            app:layout_constraintTop_toBottomOf="@+id/cardMinum3"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMinum4"
+                    android:src="@drawable/whitekoffie"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMinum4"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Luwak White Koffie"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMinum4"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum4"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMinum4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Minuman cappucino, dapat disajikan dengan es batu ataupun air panas."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMinum4"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum4"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMinum4"
+                    android:text="Rp. 7.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMinum5"
+            app:layout_constraintTop_toBottomOf="@+id/cardMinum4"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMinum5"
+                    android:src="@drawable/goodday"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMinum5"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Good Day Freeze"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMinum5"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum5"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMinum5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Minuman kopi disajikan dengan es batu."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMinum5"
+                    app:layout_constraintStart_toEndOf="@+id/ivMinum5"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMinum5"
+                    android:text="Rp. 6.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="#F1D6DF"
+        tools:context=".MiegorActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMie1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMie1"
+                    android:src="@drawable/miegor1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMie1"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text=" Mie Hype Abis"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMie1"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMie1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie goreng dengan varian ayam geprek dan rasa pedas, disajikan dengan tambahan telur."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMie1"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMie1"
+                    android:text="Rp. 12.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMie2"
+            app:layout_constraintTop_toBottomOf="@+id/cardMie1"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMie2"
+                    android:src="@drawable/miegor2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMie2"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie Goreng Rendang"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMie2"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMie2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie goreng dengan varian rasa bumbu rendang, disajikan dengan tambahan telur."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMie2"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMie2"
+                    android:text="Rp. 12.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMie3"
+            app:layout_constraintTop_toBottomOf="@+id/cardMie2"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMie3"
+                    android:src="@drawable/miegor3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMie3"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie Goreng"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMie3"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMie3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie goreng fried noodles disajikan dengan tambahan telur."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMie3"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie3"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMie3"
+                    android:text="Rp. 10.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMie4"
+            app:layout_constraintTop_toBottomOf="@+id/cardMie3"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMie4"
+                    android:src="@drawable/miegor4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMie4"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie Goreng Aceh"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMie4"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie4"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMie4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie goreng dengan memberikan cita rasa khas mie aceh, disajikan dengan tambahan telur."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMie4"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie4"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMie4"
+                    android:text="Rp. 12.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMie5"
+            app:layout_constraintTop_toBottomOf="@+id/cardMie4"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="#B1184C"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMie5"
+                    android:src="@drawable/miegor5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:id="@+id/tvMie5"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie Goreng Hot Spicy"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDescMie5"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie5"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMie5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Mie goreng dengan rasa pedas diatas rata-rata. disajikan dengan tambahan telur."
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvHargaMie5"
+                    app:layout_constraintStart_toEndOf="@+id/ivMie5"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescMie5"
+                    android:text="Rp. 12.000"
+                    android:textColor="#FFFF"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
